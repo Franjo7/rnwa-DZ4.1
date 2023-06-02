@@ -70,7 +70,7 @@
     </div>
     <div class="row">
         <div class="col-md-6">
-            <input type="text" name="search" id="search" class="form-control" placeholder="Search Territories">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search by Territory Description">
         </div>
     </div>
     @if ($message = Session::get('success'))

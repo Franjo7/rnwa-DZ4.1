@@ -3,8 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\TerritoryControllerRestAPI;
 use App\Http\Controllers\CustomerDemographicControllerRestAPI;
+use App\Http\Controllers\RegionControllerRestAPI;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,8 +16,8 @@ use App\Http\Controllers\CustomerDemographicControllerRestAPI;
 |
 */
 
-Route::resource('territory', TerritoryControllerRestAPI::class);
 Route::resource('customerdemographic', CustomerDemographicControllerRestAPI::class);
+Route::resource('region', RegionControllerRestAPI::class);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

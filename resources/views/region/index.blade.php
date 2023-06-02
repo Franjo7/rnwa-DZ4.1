@@ -95,7 +95,7 @@
             <div class="pull-right mb-2">
               
                 <select id="regionSelect" class="form-control">
-                    <option value="">Odaberite regiju</option>
+                    <option value="">Choose a region</option>
                     @foreach ($regions as $region)
                         <option value="{{ $region->RegionID }}">{{ $region->RegionDescription }}</option>
                     @endforeach
