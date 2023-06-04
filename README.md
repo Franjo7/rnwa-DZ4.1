@@ -13,8 +13,11 @@ If you want to test REST API interface, you should check "Postman instructions.p
 Testing test account in Postman:
 
 username:test-user
+
 email:test@gmail.com
+
 password:test1234
+
 Authorization->Type->Basic Auth
 
 
