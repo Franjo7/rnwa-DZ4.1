@@ -34,6 +34,7 @@ class TerritoryController extends Controller
             'TerritoryID' => 'required',
             'TerritoryDescription' => 'required',
             'RegionID' => 'required',
+            'user_id' => auth()->user()->id,
         ]);
 
         Territory::create($request->all());
@@ -114,7 +115,7 @@ class TerritoryController extends Controller
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                 </td>
-                
+
             </tr>
             ';
            }

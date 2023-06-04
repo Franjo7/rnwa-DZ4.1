@@ -1,3 +1,4 @@
+@if (Auth::user())
 <!DOCTYPE html>
 <html lang="en">
 
@@ -184,3 +185,6 @@
 </body>
 
 </html>
+@else
+    <script>window.location = "/login";</script>
+@endif

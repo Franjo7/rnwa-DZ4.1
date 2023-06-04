@@ -34,6 +34,7 @@ class TerritoryControllerRestAPI extends Controller
             'TerritoryID' => 'required',
             'TerritoryDescription' => 'required',
             'RegionID' => 'required',
+            'user_id' => auth()->user()->id,
         ]);
 
         $territory = Territory::create($request->all());

@@ -28,6 +28,7 @@ class CustomerSearchController extends Controller
             ->orWhere('Country', 'like', "%$searchInput%")
             ->orWhere('Phone', 'like', "%$searchInput%")
             ->orWhere('Fax', 'like', "%$searchInput%")
+            ->orWhere('user_id', 'like', "%$searchInput%")
 
             ->get();
 

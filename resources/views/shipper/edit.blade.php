@@ -1,3 +1,4 @@
+@if (Auth::user())
 <!DOCTYPE html>
 <html lang="en">
 
@@ -138,3 +139,6 @@ console.error('Error:', error);
 </script>
 </body>
 </html>
+@else
+    <script>window.location = "/login";</script>
+@endif

@@ -1,3 +1,4 @@
+@if (Auth::user())
 @foreach ($products as $product)
     <tr>
         <td>{{ $product->ProductID }}</td>
@@ -20,3 +21,6 @@
         </td>
     </tr>
 @endforeach
+@else
+    <script>window.location = "/login";</script>
+@endif

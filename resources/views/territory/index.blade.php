@@ -1,3 +1,4 @@
+@if (Auth::user())
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,9 +109,9 @@
 </div>
 <script>
 $(document).ready(function(){
- 
+
     fetch_customer_data();
-    
+
     function fetch_customer_data(query = '')
     {
         $.ajax({
@@ -124,15 +125,18 @@ $(document).ready(function(){
                 $('#total_records').text(data.total_data);
             }
         })
-        
+
     }
     $(document).on('keyup', '#search', function(){
         var query = $(this).val();
         fetch_customer_data(query);
     });
- 
-    
+
+
 });
 </script>
 </body>
 </html>
+@else
+    <script>window.location = "/login";</script>
+@endif

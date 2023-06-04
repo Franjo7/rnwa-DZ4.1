@@ -30,7 +30,8 @@ class CustomerDemographicControllerRestAPI extends Controller
     {
         $request->validate([
             'CustomerTypeID' => 'required',
-            'CustomerDesc' => 'required'
+            'CustomerDesc' => 'required',
+            'user_id' => auth()->user()->id,
         ]);
 
         $customerdemographic = CustomerDemographic::create($request->all());

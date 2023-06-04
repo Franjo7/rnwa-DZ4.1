@@ -52,3 +52,7 @@ Route::get('/shipperCRUD/{id}', [ShipperCRUDController::class, 'show'])->name('s
 Route::post('/shipperCRUD', [ShipperCRUDController::class, 'store'])->name('shipper.store');
 Route::put('/shipperCRUD/{id}', [ShipperCRUDController::class, 'update'])->name('shipper.update');
 Route::delete('/shipperCRUD/{id}', [ShipperCRUDController::class, 'destroy'])->name('shipper.destroy');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

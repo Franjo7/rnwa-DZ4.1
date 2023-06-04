@@ -31,7 +31,8 @@ class RegionControllerRestAPI extends Controller
     {
         $request->validate([
             'RegionID' => 'required',
-            'RegionDescription' => 'required'
+            'RegionDescription' => 'required',
+            'user_id' => auth()->user()->id,
         ]);
 
         $region = Region::create($request->all());

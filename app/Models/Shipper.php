@@ -14,7 +14,8 @@ class Shipper extends Model
     protected $fillable = [
         'ShipperID',
         'CompanyName',
-        'Phone'
+        'Phone',
+        'user_id',
     ];
 
 

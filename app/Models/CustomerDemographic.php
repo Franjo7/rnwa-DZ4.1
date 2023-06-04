@@ -15,7 +15,8 @@ class CustomerDemographic extends Model
 
     protected $fillable = [
         'CustomerTypeID',
-        'CustomerDesc'
+        'CustomerDesc',
+        'user_id',
     ];
 
 

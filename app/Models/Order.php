@@ -26,6 +26,7 @@ class Order extends Model
         'ShipRegion',
         'ShipPostalCode',
         'ShipCountry',
+        'user_id',
     ];
 
     public $timestamps = false;
