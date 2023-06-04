@@ -10,8 +10,8 @@ If you want to run our Laravel application, you must complete the following step
 If you want to test REST API interface, you should check "Postman instructions.pdf".
 
 
+Testing test account in Postman:
 
-Testing test account in Postman
 username:test-user
 email:test@gmail.com
 password:test1234
