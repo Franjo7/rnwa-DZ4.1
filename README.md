@@ -17,7 +17,7 @@ Testing test account in Postman:
 3. password:test1234
 4. Authorization->Type->Basic Auth
 
-Before testing test account in Postman, to get "public/build/manifest.json", you need to execute these commands as well:
+Before being able to load http://localhost:8000/login, you need to execute these commands as well:
 
 1. npm install --save-dev vite laravel-vite-plugin
 2. npm run build  
