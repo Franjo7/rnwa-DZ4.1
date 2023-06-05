@@ -12,13 +12,15 @@ If you want to test REST API interface, you should check "Postman instructions.p
 
 Testing test account in Postman:
 
-username:test-user
+1. username:test-user
+2. email:test@gmail.com
+3. password:test1234
+4. Authorization->Type->Basic Auth
 
-email:test@gmail.com
+Before testing test account in Postman, to get "public/build/manifest.json", you need to execute these commands as well:
 
-password:test1234
-
-Authorization->Type->Basic Auth
+1. npm install --save-dev vite laravel-vite-plugin
+2. npm run build  
 
 
 
